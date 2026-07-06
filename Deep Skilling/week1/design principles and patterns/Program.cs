@@ -1,28 +1,22 @@
 using System;
 
-namespace SingletonPatternExample
+namespace FactoryMethodPatternExample
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Logger logger1 = Logger.GetInstance();
-            Logger logger2 = Logger.GetInstance();
+            DocumentFactory wordFactory = new WordDocumentFactory();
+            Document wordDoc = wordFactory.CreateDocument();
+            wordDoc.Open();
 
-            logger1.Log("Application Started");
-            logger2.Log("User Logged In");
+            DocumentFactory pdfFactory = new PdfDocumentFactory();
+            Document pdfDoc = pdfFactory.CreateDocument();
+            pdfDoc.Open();
 
-            Console.WriteLine();
-
-
-            if (logger1 == logger2)
-            {
-                Console.WriteLine("Only one Logger object exists.");
-            }
-            else
-            {
-                Console.WriteLine("Multiple Logger objects created.");
-            }
+            DocumentFactory excelFactory = new ExcelDocumentFactory();
+            Document excelDoc = excelFactory.CreateDocument();
+            excelDoc.Open();
         }
     }
 }
