@@ -1,0 +1,1 @@
+// await repo.GetAllAsync(); // FindAsync/FirstOrDefaultAsync/ToListAsync examples

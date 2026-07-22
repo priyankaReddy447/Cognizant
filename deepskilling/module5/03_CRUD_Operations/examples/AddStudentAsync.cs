@@ -1,0 +1,1 @@
+// await repo.AddAsync(new Student{Name="John",Email="john@test.com"});
