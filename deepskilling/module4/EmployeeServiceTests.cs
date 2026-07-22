@@ -1,0 +1,1 @@
+using NUnit.Framework; using Moq; public class EmployeeServiceTests{[Test] public void GetEmployee(){var m=new Mock<IRepository>();m.Setup(x=>x.GetName(1)).Returns("Alice");Assert.That(new EmployeeService(m.Object).GetEmployee(1),Is.EqualTo("Alice"));}}
