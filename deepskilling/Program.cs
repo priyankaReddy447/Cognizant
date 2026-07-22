@@ -1,1 +1,0 @@
-Console.WriteLine("EF Core 8 Starter");
