@@ -1,0 +1,3 @@
+-- 15_deadlocks_isolation_levels.sql
+SET TRANSACTION ISOLATION LEVEL READ COMMITTED;
+BEGIN TRAN; SELECT * FROM Employee; COMMIT;

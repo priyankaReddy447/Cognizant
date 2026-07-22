@@ -1,0 +1,6 @@
+-- 01_create_database.sql
+CREATE DATABASE FSEDB;
+GO
+USE FSEDB;
+CREATE TABLE Employee(Id INT PRIMARY KEY,Name VARCHAR(50),Dept VARCHAR(30),Salary DECIMAL(10,2));
+INSERT INTO Employee VALUES(1,'Alice','HR',50000),(2,'Bob','IT',70000),(3,'Carol','IT',65000);
