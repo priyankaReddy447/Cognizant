@@ -1,1 +1,0 @@
-namespace Demo.Data; public class AppDbContext{}

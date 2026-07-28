@@ -1,2 +1,0 @@
--- 12_cursors.sql
-DECLARE c CURSOR FOR SELECT Name FROM Employee; OPEN c; CLOSE c; DEALLOCATE c;

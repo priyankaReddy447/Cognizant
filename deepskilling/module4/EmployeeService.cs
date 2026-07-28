@@ -1,1 +1,0 @@
-public interface IRepository{string GetName(int id);} public class EmployeeService{private readonly IRepository r; public EmployeeService(IRepository r){this.r=r;} public string GetEmployee(int id)=>r.GetName(id);}

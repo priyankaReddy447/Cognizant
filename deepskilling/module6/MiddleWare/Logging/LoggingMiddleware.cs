@@ -1,1 +1,0 @@
-// Sample request logging middleware
